@@ -1,7 +1,7 @@
 import pandas as pd
 import pytest
 
-from burrow_pandas import JsonArray
+from burrowpandas import JsonArray
 
 
 @pytest.fixture
