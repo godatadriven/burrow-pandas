@@ -35,13 +35,8 @@ class NumPyBackedExtensionArrayMixin(ExtensionArray):
         else:
             return type(self)(result)
 
-    def setitem(self, indexer, value):
-        """Set the 'value' inplace.
-        """
-        # I think having a separate than __setitem__ is good
-        # since we have to return here, but __setitem__ doesn't.
-        self[indexer] = value
-        return self
+    def __setitem__(self, key, value):
+        self[key] = value
 
     @property
     def nbytes(self):

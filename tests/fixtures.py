@@ -29,11 +29,12 @@ def json_list():
         "Superhuman reflexes"
      ]
     }
-    ''']
+    ''',
+    '{}']
 
 @pytest.fixture
 def json_array(json_list):
-    return JsonArray(json_list)
+    return JsonArray.from_string(json_list)
 
 
 @pytest.fixture

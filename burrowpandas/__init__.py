@@ -1,5 +1,3 @@
-from .nestedarray import NestedArray
+from burrowpandas.jsonarray import JsonArray
 
-from .jsonarray import JsonArray, JsonAccessor
-
-__all__ = [JsonArray, JsonAccessor]
+__all__ = [JsonArray]
